@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist",
+        "module": "commonjs",
+        "target": "es5",
+        "noImplicitAny": false,
+        "moduleResolution": "node",
+        "typeRoots": [ "./node_modules/@types" ],
+        "declaration": true,
+        "strict": true
+    }
+}
