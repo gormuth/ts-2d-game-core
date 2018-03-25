@@ -1,5 +1,5 @@
 import { MapParameters } from "../models/MapModel";
-import { CellsProperties } from "../models/CellsModel";
+import { CellProperties } from "../models/CellsModel";
 
 export class Map {
     public name: string;
@@ -20,17 +20,18 @@ export class Map {
         this.map       = this.createMap();
     }
 
-    public setCellProperties(cellsProperties: CellsProperties) {
-        const background = cellsProperties.background;
-        const solid      = cellsProperties.solid;
-        const positionX  = cellsProperties.positionX;
-        const positionY  = cellsProperties.positionY;
-        this.map[positionX][positionY] = {
-            backgroundImage: background,
-            isSolid: solid,
-        };
-    }
+    // public setCellProperties(cellsProperties: CellProperties) {
+    //     const background = cellsProperties.background;
+    //     const solid      = cellsProperties.solid;
+    //     const positionX  = cellsProperties.positionX;
+    //     const positionY  = cellsProperties.positionY;
+    //     this.map[positionX][positionY] = {
+    //         backgroundImage: background,
+    //         isSolid: solid,
+    //     };
+    // }
 
+    // TODO: Create interface for map object
     private createMap(): any[] {
         const map = this.generateCellsX(this.generateCellsY.bind(this));
         return map;

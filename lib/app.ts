@@ -12,12 +12,12 @@ const map = new Map({
 
 console.log(map.map);
 
-map.setCellProperties({
-    background: "test",
-    solid: false,
-    positionX: 5,
-    positionY: 5,
-});
+// map.setCellProperties({
+//     background: "test",
+//     solid: false,
+//     positionX: 5,
+//     positionY: 5,
+// });
 
 console.log("-----------------------------------------------");
 
@@ -29,7 +29,7 @@ console.log(cell.cellDefinitions);
 
 cell.createCell({
     background: "test",
-    label: "grasse",
+    label: "grass",
     solid: false,
     positionX: 0,
     positionY: 0,
